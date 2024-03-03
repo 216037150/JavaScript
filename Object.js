@@ -22,3 +22,18 @@ var p = new person("David", 21);
 p.changeName("John");
 
 document.write(p.name);
+
+
+// Find your  born year
+function person(name, age) {
+  this.name= name;
+  this.age = age;
+  this.yearOfBirth = bornYear;
+}
+function bornYear() {
+  return 2024 - this.age;
+}
+
+var p = new person("A", 34);
+
+document.write(p.yearOfBirth());
